@@ -12,3 +12,4 @@ install:
   - VBoxManage -v
 script:
   - date
+  - echo "--- END ---"
