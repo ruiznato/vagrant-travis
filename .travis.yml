@@ -10,7 +10,7 @@ install:
   - sudo apt-get -y install linux-headers-$(uname -r)
   - sudo apt-get -y install virtualbox-5.0
   - wget https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1_x86_64.deb
-  - dpkg -i vagrant_1.8.1_x86_64.deb
+  - sudo dpkg -i vagrant_1.8.1_x86_64.deb
   - VBoxManage -v
 script:
   - date
