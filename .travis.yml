@@ -10,7 +10,6 @@ install:
   - sudo apt-get -y install linux-headers-$(uname -r)
   - sudo apt-get -y install virtualbox-5.0
   - sudo apt-get -y install vagrant
-  - sudo apt-get -y install virtualbox-dkms
   - VBoxManage -v
 script:
   - date
