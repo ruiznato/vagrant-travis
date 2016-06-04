@@ -8,9 +8,11 @@ install:
   - wget http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
   - sudo apt-get update
   - sudo apt-get -y install linux-headers-$(uname -r)
-  - sudo apt-get -y install virtualbox-4.2
+  - sudo apt-get -y install virtualbox-5.10
   - VBoxManage -v
 script:
   - date
   - echo "--- END ---"
   - VBoxManage -v
+  - vagrant init neito/centos7
+  - vagrant up
